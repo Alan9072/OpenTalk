@@ -7,11 +7,15 @@
     font-family:   Calibri, 'Trebuchet MS', sans-serif;
 }
 
+body{
+    height: 100svh;
+    width:100%;
+}
  
 .maindiv{
     padding:25px;
-    width:100vw;
-    max-height:100svh;
+    width:100%;
+    height:100%;
     background-color:#E2E4E9;
     display: flex;
     gap:5px;
@@ -247,10 +251,13 @@
 }
 
 @media screen and (max-width:480px){
-   
-    .maindiv{
+    body{
+        height:100svh;
         width:100vw;
-        height:100vh;
+    }
+    .maindiv{
+        width:100%;
+        height:100%;
         background-color:#E2E4E9;
         padding: 8px;
        
