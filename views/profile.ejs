@@ -56,7 +56,7 @@
                 </div>
                 <div class="lineDiv">
                     <div class="profileImageCircle">
-                        <img src="/images/uploads/<%=profileImage%>">
+                        <img src="/images/uploads/<%= profileImage %>" alt="Profile Image" onerror="this.onerror=null; this.src='/images/uploads/noProfileImage.png';">
                         <button id="uploadButton" class="editBtn"><i class="ri-pencil-fill"></i></button>
                     </div>
                 </div>

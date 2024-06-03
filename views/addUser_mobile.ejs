@@ -62,7 +62,7 @@
                         <li class="existingUser">
                             <div class="userdetails">
                                 <div class="profile" >
-                                    <img src="/images/uploads/<%=user.profileImage%>">
+                                    <img src="/images/uploads/<%= user.profileImage %>" alt="Profile Image" onerror="this.onerror=null; this.src='/images/uploads/noProfileImage.png';">
                                 </div>
                                 <div class="description">
                                     <h5>
@@ -110,7 +110,7 @@
                         <div class="userdetails2nd">
                             <div class="userarea">
                                 <div class="profile" >
-                                    <img src="/images/uploads/<%= req.profileImage%>">
+                                    <img src="/images/uploads/<%= req.profileImage %>" alt="Profile Image" onerror="this.onerror=null; this.src='/images/uploads/noProfileImage.png';">
                                 </div>
                                 <div class="description">
                                     <h4><%=req.fullname%></h4>

@@ -60,7 +60,7 @@
                         <%for (let user of onlineUsersList){ %>
                         <div class="user1">
                             <div class="profile" >    
-                                <img src="/images/uploads/<%=user.profileImage%>">
+                                <img src="/images/uploads/<%= user.profileImage %>" alt="Profile Image" onerror="this.onerror=null; this.src='/images/uploads/noProfileImage.png';">
                             </div>
                             <div class="description">
                                 <h4><%= user.fullname %></h4>
